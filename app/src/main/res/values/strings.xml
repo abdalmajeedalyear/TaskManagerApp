@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">مدير المهام</string>
+
+    <!-- الواجهة الرئيسية -->
+    <string name="main_title">الباحصانيات والانتاجية</string>
+    <string name="weekly">أسبوعي</string>
+    <string name="yearly">سنوي</string>
+    <string name="monthly">شهري</string>
+    <string name="focus_time">وقت التركيز</string>
+    <string name="hours_24">٢٤ ساعة</string>
+    <string name="efficiency_rate">معدل الكفاءة:</string>
+    <string name="completed_tasks">المهام المكتملة أسبوعياً</string>
+    <string name="past_days">أيام الماضية:</string>
+    <string name="continuous_improvement">تطور مستمر</string>
+    <string name="task_distribution">توزيع المهام</string>
+    <string name="work">العمل</string>
+    <string name="personal">شخصي</string>
+    <string name="learning">تعلم</string>
+    <string name="great_achievement">إنجاز رائع!</string>
+    <string name="exceeded_goal">لقد تجاوزت هدفك الأسبوعي بنسبة</string>
+    <string name="view_details">عرض التفاصيل</string>
+
+    <!-- القائمة السفلية -->
+    <string name="files">الملف</string>
+    <string name="statistics">الإحصائيات</string>
+    <string name="tasks">المهام</string>
+    <string name="home">الرئيسية</string>
+</resources>

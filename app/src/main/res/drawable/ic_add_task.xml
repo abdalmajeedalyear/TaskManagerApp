@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="56dp"
+    android:height="56dp"
+    android:viewportWidth="56"
+    android:viewportHeight="56">
+
+    <!-- دائرة بحدود سميكة -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#F9F9FA"
+        android:strokeWidth="3"
+        android:pathData="M28,2.5a25.5,25.5 0 1,1 0,51a25.5,25.5 0 1,1 0,-51z" />
+
+    <!-- علامة صح داخل الدائرة -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#F9F9FA"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M20,30L26,36L36,22" />
+</vector>

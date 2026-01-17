@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_files"
+        android:title="الملف"
+        android:icon="@drawable/ic_document" />
+
+    <item
+        android:id="@+id/nav_statistics"
+        android:title="الإحصائيات"
+        android:icon="@drawable/ic_statistics" />
+
+    <item
+        android:id="@+id/nav_tasks"
+        android:title="المهام"
+        android:icon="@drawable/ic_tasks" />
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="الرئيسية"
+        android:icon="@drawable/ic_home" />
+
+</menu>

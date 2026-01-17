@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bottom_sheet_background">
+
+    <!-- خلفية زوايا منحنية -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@drawable/bottom_sheet_top_round" />
+
+    <!-- ScrollView لجميع المحتويات -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="32dp">
+
+            <!-- شريط السحب -->
+            <View
+                android:layout_width="40dp"
+                android:layout_height="4dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:background="@color/gray_light" />
+
+            <!-- عنوان البوتوم شيت -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"
+                android:text="إضافة مهمة جديدة"
+                android:textSize="20sp"
+                android:textColor="@color/text_primary"
+                android:textStyle="bold"
+                android:textDirection="rtl" />
+
+            <!-- العنوان -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="8dp"
+                android:text="عنوان المهمة"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:textDirection="rtl" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/title_input_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
+                app:boxBackgroundColor="@color/white"
+                app:hintTextColor="@color/text_secondary"
+                app:boxStrokeColor="@color/gray_light"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusBottomEnd="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/title_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="مثلاً: مراجعة التقرير الشهري"
+                    android:minHeight="48dp"
+                    android:textDirection="rtl"
+                    android:textAlignment="viewStart" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- الوصف -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="8dp"
+                android:text="الوصف"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:textDirection="rtl" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/description_input_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
+                app:boxBackgroundColor="@color/white"
+                app:hintTextColor="@color/text_secondary"
+                app:boxStrokeColor="@color/gray_light"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusBottomEnd="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/description_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:gravity="top"
+                    android:hint="أضف تفاصيل إضافية للمهمة..."
+                    android:textDirection="rtl"
+                    android:textAlignment="viewStart" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- خط فاصل -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="24dp"
+                android:background="@color/gray_light" />
+
+            <!-- التاريخ والوقت -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="16dp"
+                android:text="التاريخ والوقت"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:textStyle="bold"
+                android:textDirection="rtl" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+         <LinearLayout
+             android:id="@+id/date_layout"
+             android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginEnd="10dp"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="35dp"
+
+            android:background="@drawable/rounded_background"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- التاريخ -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+
+                    android:src="@drawable/ic_calendar"
+                    android:tint="@color/primary_color" />
+
+                <TextView
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="اليوم"
+                    android:textSize="24sp"
+                    android:textColor="@color/text_primary"
+                    android:textDirection="rtl" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/date_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24 أكتوبر 2023"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary"
+                    android:textDirection="rtl" />
+
+            </LinearLayout>
+         </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/time_layout"
+
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+
+             android:paddingVertical="10dp"
+             android:paddingHorizontal="35dp"
+             android:layout_marginStart="10dp"
+             android:background="@drawable/rounded_background"
+             android:orientation="horizontal"
+             android:gravity="center_vertical">
+
+            <!-- الوقت -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_time"
+                    android:backgroundTint="@color/category_learning"
+                    android:tint="@color/primary_color" />
+
+                <TextView
+                    android:layout_marginVertical="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="الوقت"
+                    android:textSize="24sp"
+                    android:textColor="@color/text_primary"
+                    android:textDirection="rtl" />
+
+                <TextView
+                    android:id="@+id/time_text"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:00 صباحاً"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_secondary"
+                    android:textDirection="rtl" />
+
+            </LinearLayout>
+         </LinearLayout>
+
+        </LinearLayout>
+
+
+
+            <!-- خط فاصل -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="24dp"
+                android:background="@color/gray_light" />
+
+            <!-- التصنيف -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="16dp"
+                android:text="التصنيف"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:textStyle="bold"
+                android:textDirection="rtl" />
+
+            <!-- أزرار التصنيف مع HorizontalScrollView -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
+                android:scrollbars="none"
+                android:fadingEdgeLength="32dp">
+
+                <LinearLayout
+                    android:id="@+id/categories_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <!-- زر العمل -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_category_work"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="عمل"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        app:cornerRadius="8dp"
+                        app:backgroundTint="@color/category_work"
+                        app:strokeColor="@color/completed_task"/>
+
+                    <!-- زر شخصي -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_category_personal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="شخصي"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_secondary"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        app:cornerRadius="8dp"
+                        app:strokeColor="@color/completed_task"
+                        app:strokeWidth="1dp"
+                        app:backgroundTint="@color/white" />
+
+                    <!-- زر تعليم -->
+
+                    <!-- زر صحة -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_category_learning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="8dp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:text="تعليم"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/white"
+                        app:cornerRadius="8dp"
+                        app:strokeColor="@color/completed_task"
+                        app:strokeWidth="1dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_category_health"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="صحة"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_secondary"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        app:cornerRadius="8dp"
+                        app:strokeColor="@color/completed_task"
+                        app:strokeWidth="1dp"
+                        app:backgroundTint="@color/white" />
+
+                    <!-- زر تسويق -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_category_marketing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="تسويق"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_secondary"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        app:cornerRadius="8dp"
+                        app:strokeColor="@color/completed_task"
+                        app:strokeWidth="1dp"
+                        app:backgroundTint="@color/white" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- خط فاصل -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="24dp"
+                android:background="@color/gray_light" />
+
+            <!-- تفعيل التنبيه -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="32dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/notification_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:checked="true"
+                    app:trackColor="@color/primary_light"
+                    app:thumbColor="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="تفعيل التنبيه"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_primary"
+                    android:textDirection="rtl" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تلقي إشعار قبل 15 دقيقة"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary"
+                    android:textDirection="rtl" />
+
+            </LinearLayout>
+
+
+
+            <!-- زر إنشاء المهمة مع الأيقونة -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_create_task"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:text="إنشاء المهمة"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:drawableStart="@drawable/ic_add_task"
+
+                android:drawablePadding="8dp"
+                android:paddingStart="12dp"
+                app:cornerRadius="12dp"
+                app:backgroundTint="@color/primary_color"
+                app:iconGravity="textStart"
+                app:iconPadding="4dp" />
+
+            <!-- مسافة إضافية في الأسفل -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="24dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

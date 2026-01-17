@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ألوان النظام -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- ألوان التطبيق المخصصة -->
+    <color name="primary_color">#4A6FA5</color>
+    <color name="secondary_color">#16697A</color>
+    <color name="background_color">#F8F9FA</color>
+    <color name="card_color">#FFFFFF</color>
+    <color name="text_primary">#212529</color>
+    <color name="text_secondary">#6C757D</color>
+    <color name="success_green">#28A745</color>
+    <color name="work_color">#FF6B6B</color>
+    <color name="personal_color">#4ECDC4</color>
+    <color name="learning_color">#45B7D1</color>
+    <color name="divider_color">#E9ECEF</color>
+    <color name="primary_light">#E8F4F8</color>
+
+    <color name="high_priority">#DC3545</color>
+    <color name="medium_priority">#FD7E14</color>
+    <color name="low_priority">#28A745</color>
+    <color name="completed_task">#6C757D</color>
+
+    <color name="checkbox_border">#CCCCCC</color>
+    <color name="checkbox_background_checked">#4A6FA5</color>
+
+
+    <!-- ألوان شريط الفلترة -->
+    <color name="border_color">#E0E0E0</color>
+    <color name="filter_text_selected">#FFFFFF</color>
+    <color name="filter_text_unselected">#666666</color>
+
+    <!-- ألوان البوتوم شيت -->
+    <color name="gray_light">#F0F0F0</color>
+
+    <!-- ألوان التصنيفات -->
+    <color name="category_work">#4A6FA5</color>
+    <color name="category_personal">#28A745</color>
+    <color name="category_learning">#FD7E14</color>
+    <color name="category_health">#DC3545</color>
+    <color name="category_marketing">#6F42C1</color>
+
+    <color name="card_background">#F5F5F5</color>
+
+
+</resources>
