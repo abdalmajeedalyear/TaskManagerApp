@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="@color/background_color">
 
-
+    <!--  قمت باضافة تعديل في الواجهة الامامية-->
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
