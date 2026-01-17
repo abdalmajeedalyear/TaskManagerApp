@@ -8,11 +8,15 @@
     android:background="@color/background_color">
     <!--[]-->
 
+<<<<<<< HEAD
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
     </View>
+=======
+
+>>>>>>> 255bee08022e1d0ded2b5adca1e776dd0963f85e
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
